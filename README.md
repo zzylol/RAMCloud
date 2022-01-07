@@ -26,3 +26,12 @@ The RAMCloud project is based in the Department of Computer Science at Stanford 
 
 # Learn More about RAMCloud
 https://ramcloud.atlassian.net/wiki/spaces/RAM/overview
+
+# Setting up RAMCloud
+## Compile
+```
+sudo apt update
+sudo apt-get install libprotobuf-dev protobuf-compiler -y
+cd $RAMCloud
+make
+```
