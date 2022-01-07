@@ -33,7 +33,8 @@ https://ramcloud.atlassian.net/wiki/spaces/RAM/overview
 sudo apt update
 sudo apt-get install libprotobuf-dev protobuf-compiler -y # install protobuf and environment
 sudo apt-get install libgtest-dev -y # install gtest
-apt-get install libpcre3 libpcre3-dev -y # pcre
+sudo apt-get install libpcre3 libpcre3-dev -y # pcre
+sudo apt-get install libzookeeper-mt-dev
 cd $RAMCloud
 make
 ```
