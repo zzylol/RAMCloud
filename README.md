@@ -34,7 +34,7 @@ sudo apt update
 sudo apt-get install libprotobuf-dev protobuf-compiler -y # install protobuf and environment
 sudo apt-get install libgtest-dev -y # install gtest
 sudo apt-get install libpcre3 libpcre3-dev -y # pcre
-sudo apt-get install libzookeeper-mt-dev
+sudo apt-get install libzookeeper-mt-dev -y
 sudo apt install libboost-system-dev libboost-filesystem-dev libboost-program-options-dev -y
 cd $RAMCloud
 make
