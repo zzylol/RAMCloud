@@ -39,3 +39,16 @@ sudo apt install libboost-system-dev libboost-filesystem-dev libboost-program-op
 cd $RAMCloud
 make
 ```
+## Run Coordinator, Server and Client
+(Without zookeeper and multiple instances of coordinators)
+Starting the Coordinator:
+```
+./obj.master/coordinator -C tcp:host=`hostname -s`,port=11100
+```
+Starting the Server:
+```
+obj.master/server -L tcp:host=`hostname -s`,port=1101 -x --totalMasterMemory 16000 -f /dev/sda4 --segmentFrames 10000 -r 2
+```
+Starting the Client:
+```
+```
