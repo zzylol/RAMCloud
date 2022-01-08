@@ -45,9 +45,9 @@ Starting the Coordinator:
 ```
 ./obj.master/coordinator -C tcp:host=`hostname -s`,port=11100
 ```
-Starting the Server:
+Starting the Server: (for c6220, use /dev/sda4, should give enough space for backup)
 ```
-obj.master/server -L tcp:host=`hostname -s`,port=1101 -x --totalMasterMemory 16000 -f /dev/sda4 --segmentFrames 10000 -r 2
+obj.master/server -L tcp:host=`hostname -s`,port=1101 --totalMasterMemory 16000 -f /dev/sda4 --segmentFrames 10000 -r 2 
 ```
 Starting the Client:
 ```
